@@ -8,5 +8,5 @@ import { Hero } from './hero/hero'
   providers: [HeroService]
 })
 export class AppComponent {
-  title = 'Tour of Heroes';
+
 }
