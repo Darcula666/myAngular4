@@ -4,7 +4,8 @@ import { HeroService } from './hero.service';
 @Component({
   selector: 'app-hero',
   templateUrl: './hero.component.html',
-  styleUrls: ['./hero.component.css']
+  styleUrls: ['./hero.component.css'],
+  providers: [HeroService]
 })
 
 export class HeroComponent implements OnInit{
