@@ -13,8 +13,10 @@ export class HeroComponent implements OnInit{
   title = 'Tour of Heroes';
   heroes: Hero[];
   selectedHero: Hero;
-  router: Router;
-  constructor(private heroService: HeroService) { }
+  constructor(
+    private router: Router,
+    private heroService: HeroService
+  ) { }
   getHeroes(): void {
     this.heroService.getHeroes().then(heroes => this.heroes = heroes);
   }
