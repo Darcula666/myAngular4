@@ -10,12 +10,17 @@ import { RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero/hero-detail.component';
 import { AppRoutingModule } from './app-routing.module';
+import { GirlComponent } from './girl/girl.component';
+import { GirlListComponent } from './girl/girl-list.component';
+import { GirlService } from './girl/girl.service';
 @NgModule({
   declarations: [
     AppComponent,
     HeroComponent,
     DashboardComponent,
-    HeroDetailComponent
+    HeroDetailComponent,
+    GirlComponent,
+    GirlListComponent
   ],
   imports: [
     BrowserModule,
@@ -23,7 +28,7 @@ import { AppRoutingModule } from './app-routing.module';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [HeroService],
+  providers: [HeroService, GirlService],
   bootstrap: [AppComponent],
 })
 
