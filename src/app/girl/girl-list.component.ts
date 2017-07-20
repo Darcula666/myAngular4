@@ -1,4 +1,4 @@
-import {Component,OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {Girl} from './girl';
 import {GirlService} from './girl.service';
 @Component({

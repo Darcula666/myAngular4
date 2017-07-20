@@ -5,7 +5,7 @@ import 'rxjs/add/operator/catch';
 import 'rxjs/add/operator/map';
 import { Girl } from './girl';
 @Injectable()
-export class GirlService{
+export class GirlService {
     private girlUrl= 'http://localhost:8081/girls';
     constructor (private http: Http) {}
     getGirls(): Observable<Girl[]> {
@@ -14,7 +14,7 @@ export class GirlService{
          .catch(this.handleError);
     }
     private extractData(res: Response) {
-    let body = res.json();
+    const body = res.json();
 
     return body.data || { };
   }
