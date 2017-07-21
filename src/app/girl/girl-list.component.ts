@@ -17,12 +17,12 @@ export class GirlListComponent implements OnInit {
                        girls => this.girls = girls,
                        error =>  this.errorMessage = <any>error);
   }
- /*  addHero(name: string) {
+/* addHero(name: string) {
     if (!name) { return; }
     this.grilService.create(name)
                      .subscribe(
-                       hero  => this.heroes.push(hero),
+                       hero  => this.girls.push(girl),
                        error =>  this.errorMessage = <any>error);
-  } */
-
+  }
+ */
 }
