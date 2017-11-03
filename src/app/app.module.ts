@@ -13,6 +13,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { GirlComponent } from './girl/girl.component';
 import { GirlListComponent } from './girl/girl-list.component';
 import { GirlService } from './girl/girl.service';
+import { DeptComponent } from './component/dept/dept.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,8 @@ import { GirlService } from './girl/girl.service';
     DashboardComponent,
     HeroDetailComponent,
     GirlComponent,
-    GirlListComponent
+    GirlListComponent,
+    DeptComponent
   ],
   imports: [
     BrowserModule,
