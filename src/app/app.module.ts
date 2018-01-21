@@ -9,9 +9,6 @@ import { HeroService } from './hero/hero.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero/hero-detail.component';
 import { AppRoutingModule } from './app-routing.module';
-import { GirlComponent } from './girl/girl.component';
-import { GirlListComponent } from './girl/girl-list.component';
-import { GirlService } from './girl/girl.service';
 import { DeptComponent } from './component/dept/dept.component';
 @NgModule({
   declarations: [
@@ -19,8 +16,6 @@ import { DeptComponent } from './component/dept/dept.component';
     HeroComponent,
     DashboardComponent,
     HeroDetailComponent,
-    GirlComponent,
-    GirlListComponent,
     DeptComponent
   ],
   imports: [
@@ -29,7 +24,7 @@ import { DeptComponent } from './component/dept/dept.component';
     HttpModule,
     AppRoutingModule
   ],
-  providers: [HeroService, GirlService],
+  providers: [HeroService],
   bootstrap: [AppComponent],
 })
 
