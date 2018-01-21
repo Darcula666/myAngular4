@@ -6,7 +6,6 @@ import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
 import { HeroComponent } from './hero/hero.component';
 import { HeroService } from './hero/hero.service';
-import { RouterModule } from '@angular/router';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { HeroDetailComponent } from './hero/hero-detail.component';
 import { AppRoutingModule } from './app-routing.module';
