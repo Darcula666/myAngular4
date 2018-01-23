@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {GirlService} from './girl.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -6,4 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AppComponent {
   title = 'Tour of Heroes';
+  constructor(private service: GirlService) {
+    service.hello();
+  }
 }
